@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5; /* Warna latar belakang global */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* App.css */
+.page-background {
+  background: linear-gradient(to bottom, #f3d6e9, #d3a0d4);
+  min-height: 100vh;
+  margin: 0;
+}

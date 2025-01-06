@@ -1,0 +1,151 @@
+/* Gaya umum untuk halaman reservasi */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+/* Kontainer reservasi */
+.reservasi-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul halaman */
+h1 {
+    text-align: center;
+    color: #374151;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+/* Formulir reservasi */
+.reservasi-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.reservasi-form input,
+.reservasi-form select,
+.reservasi-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.reservasi-form input:focus,
+.reservasi-form select:focus,
+.reservasi-form textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+.reservasi-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Tombol Kirim */
+.btn-submit {
+    padding: 1rem;
+    background-color: #6366f1;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #4f46e5;
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Daftar reservasi */
+.reservasi-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reservasi-item {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reservasi-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reservasi-item h3 {
+    margin: 0 0 0.5rem;
+    color: #1f2937;
+}
+
+.reservasi-item p {
+    margin: 0.3rem 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+/* Tombol tindakan */
+.reservasi-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-edit {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background-color: #ef4444;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #dc2626;
+    transform: translateY(-2px);
+}

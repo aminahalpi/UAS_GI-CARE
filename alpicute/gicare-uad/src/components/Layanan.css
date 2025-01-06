@@ -1,0 +1,104 @@
+/* Gaya umum untuk halaman layanan */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f1f8;
+}
+
+.layanan-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+.layanan-container h1 {
+    font-size: 1.8rem;
+    color: #5a2d82;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Grid layanan */
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Atur jumlah kolom secara otomatis */
+    gap: 1.5rem; /* Jarak antar kotak layanan */
+    justify-items: center; /* Pusatkan setiap layanan di grid */
+}
+
+/* Item layanan */
+.layanan-item {
+    text-align: center;
+    width: 100%; /* Lebar penuh dalam grid */
+    max-width: 250px; /* Maksimal lebar kotak */
+    background-color: #ffffff; /* Warna latar kotak */
+    border: 1px solid #ddd; /* Border kotak */
+    border-radius: 10px; /* Sudut membulat */
+    padding: 1.5rem; /* Spasi di dalam kotak */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada kotak layanan */
+.layanan-item:hover {
+    transform: translateY(-5px); /* Geser sedikit ke atas saat dihover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Ikon layanan */
+.layanan-icon {
+    background-color: #a16fb9; /* Warna ungu */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem; /* Spasi di atas dan bawah ikon */
+}
+
+.layanan-icon img {
+    width: 60%; /* Ukuran ikon di dalam lingkaran */
+    height: 60%;
+}
+
+/* Nama layanan */
+.layanan-item h2 {
+    font-size: 1.1rem;
+    color: #4b1f71;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Penjelasan layanan */
+.layanan-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .layanan-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ukuran kotak lebih kecil di layar kecil */
+    }
+
+    .layanan-item {
+        max-width: 180px; /* Kurangi lebar maksimal */
+        padding: 1rem; /* Kurangi padding */
+    }
+
+    .layanan-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .layanan-item h2 {
+        font-size: 1rem;
+    }
+
+    .layanan-item p {
+        font-size: 0.8rem;
+    }
+}
